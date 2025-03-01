@@ -39,9 +39,9 @@ def create_most_sold_product(df):
 
     return most_sold_product
 
-all_df = pd.read_csv("all_df.csv")
-product_df = pd.read_csv("translated_most_sold_product_category.csv")
-customer_in_geolocation_df = pd.read_csv("customer_in_geolocation.csv")
+all_df = pd.read_csv("data/all_df.csv")
+product_df = pd.read_csv("data/translated_most_sold_product_category.csv")
+customer_in_geolocation_df = pd.read_csv("data/customer_in_geolocation.csv")
 
 
 top_customer_cities_df = create_top_customer_cities(all_df)
@@ -144,7 +144,7 @@ st.pyplot(fig)
 st.subheader("Top 10 Best-Selling Products and Highest Revenue")
 fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 25))
 
-
+# Plot for Top 10 Best-Selling Products
 sns.barplot(
     ax=ax[0],
     x="order_id",
