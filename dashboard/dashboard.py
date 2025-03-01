@@ -39,9 +39,9 @@ def create_most_sold_product(df):
 
     return most_sold_product
 
-all_df = pd.read_csv("dashboard/all_df.csv")
-product_df = pd.read_csv("dashboard/translated_most_sold_product_category.csv")
-customer_in_geolocation_df = pd.read_csv("dashboard/customer_in_geolocation.csv")
+all_df = pd.read_csv("all_df.csv")
+product_df = pd.read_csv("translated_most_sold_product_category.csv")
+customer_in_geolocation_df = pd.read_csv("customer_in_geolocation.csv")
 
 
 top_customer_cities_df = create_top_customer_cities(all_df)
